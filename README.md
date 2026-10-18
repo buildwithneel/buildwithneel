@@ -1,10 +1,10 @@
-# 👋 Hi, I’m Neel Agrawal
+<h1 align="center">👋 Hi, I’m Neel Agrawal</h1>
 
-<p align="left">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FE428E&size=19&center=false&vCenter=false&width=550&lines=AI+%26+Machine+Learning+Explorer;Backend+Developer+%26+API+Architect;Data+Science+%26+Computer+Vision;Building+Scalable+Intelligent+Solutions" alt="Typing SVG" />
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FE428E&size=20&center=true&vCenter=true&width=550&lines=AI+%26+Machine+Learning+Explorer;Backend+Developer+%26+API+Architect;Data+Science+%26+Computer+Vision;Building+Scalable+Intelligent+Solutions" alt="Typing SVG" />
 </p>
 
-<p align="left">
+<p align="center">
   <a href="https://github.com/buildwithneel" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
