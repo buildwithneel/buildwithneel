@@ -77,19 +77,24 @@
 ### 📊 GitHub & Problem Solving Stats
 
 <p align="center">
-  <!-- GitHub Main Stats with all commits calculation & reduced cache for real-time accuracy -->
-  <img src="https://github-readme-stats.vercel.app/api?username=buildwithneel&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true&cache_seconds=1800" alt="Neel's GitHub Stats" />
+  <!-- GitHub Main Stats (Displays last year's verified commits & stars, hides misleading external contrib count) -->
+  <img src="https://github-readme-stats.vercel.app/api?username=buildwithneel&show_icons=true&theme=radical&hide_border=true&hide=contribs" alt="Neel's GitHub Stats" />
   <!-- Top Languages across repositories -->
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=buildwithneel&layout=compact&theme=radical&hide_border=true&langs_count=8&cache_seconds=1800" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=buildwithneel&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Top Languages" />
 </p>
 
 <p align="center">
-  <!-- GitHub Streak Stats with shorter cache -->
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=buildwithneel&theme=radical&hide_border=true&cache_seconds=1800" alt="GitHub Streak" />
+  <!-- GitHub Streak & Total Contributions Counter (Reflects your 550+ yearly contributions) -->
+  <img src="https://streak-stats.demolab.com?user=buildwithneel&theme=radical&hide_border=true" alt="GitHub Streak" />
 </p>
 
 <p align="center">
-  <!-- LeetCode Stats Card (Replace username with your LeetCode handle if different) -->
+  <!-- Live GitHub Contribution Calendar (Matches your exact 554 contributions) -->
+  <img src="https://ghchart.rshah.org/fe428e/buildwithneel" alt="Neel's Contribution Calendar" />
+</p>
+
+<p align="center">
+  <!-- LeetCode Stats Card -->
   <a href="https://leetcode.com/u/buildwithneel" target="_blank">
     <img src="https://leetcard.jacoblin.cool/buildwithneel?theme=dark&font=Karma&ext=heatmap" alt="Neel's LeetCode Stats" />
   </a>
