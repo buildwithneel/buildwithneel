@@ -1,6 +1,8 @@
 # 👋 Hi, I’m Neel Agrawal
 
-**Architecting Intelligent AI Systems, Machine Learning Pipelines & Scalable Backends.**
+<p align="left">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FE428E&size=19&center=false&vCenter=false&width=550&lines=AI+%26+Machine+Learning+Explorer;Backend+Developer+%26+API+Architect;Data+Science+%26+Computer+Vision;Building+Scalable+Intelligent+Solutions" alt="Typing SVG" />
+</p>
 
 <p align="left">
   <a href="https://github.com/buildwithneel" target="_blank">
@@ -151,9 +153,12 @@
   <img src="https://streak-stats.demolab.com?user=buildwithneel&theme=radical&hide_border=true" alt="GitHub Streak" />
 </p>
 
+---
+
+## ✍️ Random Dev Quote
+
 <p align="center">
-  <!-- Live GitHub Contribution Calendar -->
-  <img src="https://ghchart.rshah.org/fe428e/buildwithneel" alt="Neel's Contribution Calendar" />
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Dev Quote" />
 </p>
 
 ---
