@@ -139,18 +139,17 @@
 
 ---
 
-## 📊 GitHub Activity & Stats
+## 📊 GitHub Metrics
 
-<p align="center">
+<p align="left">
   <!-- GitHub Main Stats -->
-  <img src="https://github-readme-stats.vercel.app/api?username=buildwithneel&show_icons=true&theme=radical&hide_border=true&hide=contribs" alt="Neel's GitHub Stats" />
+  <a href="https://github.com/buildwithneel">
+    <img src="https://github-readme-stats.vercel.app/api?username=buildwithneel&theme=dark&include_all_commits=true&cache_seconds=1800" alt="Neel's GitHub Stats" />
+  </a>
   <!-- Top Languages across repositories -->
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=buildwithneel&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Top Languages" />
-</p>
-
-<p align="center">
-  <!-- GitHub Streak & Total Contributions -->
-  <img src="https://streak-stats.demolab.com?user=buildwithneel&theme=radical&hide_border=true" alt="GitHub Streak" />
+  <a href="https://github.com/buildwithneel">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=buildwithneel&theme=dark&layout=compact" alt="Most Used Languages" />
+  </a>
 </p>
 
 ---
@@ -158,7 +157,7 @@
 ## ✍️ Random Dev Quote
 
 <p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Dev Quote" />
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" alt="Dev Quote" />
 </p>
 
 ---
