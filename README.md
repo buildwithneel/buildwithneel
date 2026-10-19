@@ -141,15 +141,17 @@
 
 ## 📊 GitHub Metrics
 
-<p align="left">
-  <!-- GitHub Main Stats -->
+<p align="center">
   <a href="https://github.com/buildwithneel">
-    <img src="./profile/stats.svg" alt="Neel's GitHub Stats" />
+    <img height="180" src="https://github-readme-stats.vercel.app/api?username=buildwithneel&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="Neel's GitHub Stats" />
   </a>
-  <!-- Top Languages across repositories -->
   <a href="https://github.com/buildwithneel">
-    <img src="./profile/top-langs.svg" alt="Most Used Languages" />
+    <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=buildwithneel&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Most Used Languages" />
   </a>
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=buildwithneel&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </p>
 
 ---
