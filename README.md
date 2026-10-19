@@ -144,11 +144,11 @@
 <p align="left">
   <!-- GitHub Main Stats -->
   <a href="https://github.com/buildwithneel">
-    <img src="https://github-readme-stats.vercel.app/api?username=buildwithneel&theme=dark&include_all_commits=true&cache_seconds=1800" alt="Neel's GitHub Stats" />
+    <img src="./profile/stats.svg" alt="Neel's GitHub Stats" />
   </a>
   <!-- Top Languages across repositories -->
   <a href="https://github.com/buildwithneel">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=buildwithneel&theme=dark&layout=compact" alt="Most Used Languages" />
+    <img src="./profile/top-langs.svg" alt="Most Used Languages" />
   </a>
 </p>
 

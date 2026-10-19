@@ -1,0 +1,62 @@
+name: Update GitHub Stats
+
+on:
+  schedule:
+    - cron: "0 */6 * * *" # Runs every 6 hours
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'profile/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate stats card
+        uses: soulteary/github-readme-stats-action@v1
+        continue-on-error: true
+        with:
+          card: stats
+          options: 'username=${{ github.repository_owner }}&show_icons=true&theme=dark&include_all_commits=true'
+          path: profile/stats.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card
+        uses: soulteary/github-readme-stats-action@v1
+        continue-on-error: true
+        with:
+          card: top-langs
+          options: 'username=${{ github.repository_owner }}&layout=compact&theme=dark'
+          path: profile/top-langs.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Fallback fetch if action failed
+        run: |
+          if [ ! -s profile/stats.svg ] || grep -q "Something went wrong" profile/stats.svg; then
+            echo "Fallback fetching stats..."
+            curl -s "https://github-readme-stats.vercel.app/api?username=${{ github.repository_owner }}&theme=dark&include_all_commits=true&show_icons=true" -o profile/stats.svg || true
+          fi
+          if [ ! -s profile/top-langs.svg ] || grep -q "Something went wrong" profile/top-langs.svg; then
+            echo "Fallback fetching top-langs..."
+            curl -s "https://github-readme-stats.vercel.app/api/top-langs/?username=${{ github.repository_owner }}&theme=dark&layout=compact" -o profile/top-langs.svg || true
+          fi
+
+      - name: Commit and push updated stats
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          if git diff --staged --quiet; then
+            echo "No changes in stats detected."
+          else
+            git commit -m "chore(stats): update GitHub stats SVGs [skip ci]"
+            git push
+          fi
