@@ -40,12 +40,25 @@ jobs:
 
       - name: Validate generated SVGs
         run: |
-          # Reject any file that isn't a valid SVG (e.g. Vercel "DEPLOYMENT_PAUSED" error pages)
+          # Reject files that are not valid SVGs OR contain known error messages
           for f in profile/stats.svg profile/top-langs.svg; do
-            if [ -s "$f" ] && ! grep -q "<svg" "$f"; then
-              echo "WARNING: $f does not contain a valid SVG — discarding corrupted file"
-              git checkout HEAD -- "$f" 2>/dev/null || rm -f "$f"
+            if [ ! -s "$f" ]; then
+              echo "INFO: $f is empty or missing — keeping last committed version"
+              git checkout HEAD -- "$f" 2>/dev/null || true
+              continue
             fi
+            if ! grep -q "<svg" "$f"; then
+              echo "WARNING: $f is not a valid SVG (no <svg> tag) — reverting"
+              git checkout HEAD -- "$f" 2>/dev/null || rm -f "$f"
+              continue
+            fi
+            # Catch error SVGs from the soulteary action (API errors render as SVG too)
+            if grep -qiE "Something went wrong|FORBIDDEN|Resource not accessible|DEPLOYMENT_PAUSED|rate limit" "$f"; then
+              echo "WARNING: $f contains an error message — reverting to last good version"
+              git checkout HEAD -- "$f" 2>/dev/null || rm -f "$f"
+              continue
+            fi
+            echo "OK: $f is a valid SVG"
           done
 
       - name: Commit and push updated stats
