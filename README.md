@@ -142,11 +142,13 @@
 ## 📊 GitHub Metrics
 
 <p align="center">
+  <!-- GitHub Main Stats (self-hosted SVG, updated by Actions) -->
   <a href="https://github.com/buildwithneel">
-    <img height="180" src="https://github-readme-stats.vercel.app/api?username=buildwithneel&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="Neel's GitHub Stats" />
+    <img height="180" src="./profile/stats.svg" alt="Neel's GitHub Stats" />
   </a>
+  <!-- Top Languages (self-hosted SVG, updated by Actions) -->
   <a href="https://github.com/buildwithneel">
-    <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=buildwithneel&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Most Used Languages" />
+    <img height="180" src="./profile/top-langs.svg" alt="Most Used Languages" />
   </a>
 </p>
 

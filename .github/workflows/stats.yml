@@ -38,16 +38,15 @@ jobs:
           path: profile/top-langs.svg
           token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
-      - name: Fallback fetch if action failed
+      - name: Validate generated SVGs
         run: |
-          if [ ! -s profile/stats.svg ] || grep -q "Something went wrong" profile/stats.svg; then
-            echo "Fallback fetching stats..."
-            curl -s "https://github-readme-stats.vercel.app/api?username=${{ github.repository_owner }}&theme=dark&include_all_commits=true&show_icons=true" -o profile/stats.svg || true
-          fi
-          if [ ! -s profile/top-langs.svg ] || grep -q "Something went wrong" profile/top-langs.svg; then
-            echo "Fallback fetching top-langs..."
-            curl -s "https://github-readme-stats.vercel.app/api/top-langs/?username=${{ github.repository_owner }}&theme=dark&layout=compact" -o profile/top-langs.svg || true
-          fi
+          # Reject any file that isn't a valid SVG (e.g. Vercel "DEPLOYMENT_PAUSED" error pages)
+          for f in profile/stats.svg profile/top-langs.svg; do
+            if [ -s "$f" ] && ! grep -q "<svg" "$f"; then
+              echo "WARNING: $f does not contain a valid SVG — discarding corrupted file"
+              git checkout HEAD -- "$f" 2>/dev/null || rm -f "$f"
+            fi
+          done
 
       - name: Commit and push updated stats
         run: |
