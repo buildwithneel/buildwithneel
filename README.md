@@ -134,25 +134,32 @@
 - 🤝 Enthusiastic collaborator in technical hackathons, open-source communities, and interdisciplinary engineering teams
 
 ---
-
 ## 📊 GitHub Metrics
 
 <p align="center">
-  <!-- GitHub Main Stats (self-hosted SVG, updated by Actions) -->
   <a href="https://github.com/buildwithneel">
-    <img height="180" src="./profile/stats.svg" alt="Neel's GitHub Stats" />
+    <img
+      height="180"
+      src="https://github-readme-stats.vercel.app/api?username=buildwithneel&show_icons=true&include_all_commits=true&number_format=long&theme=tokyonight&hide_border=true"
+      alt="Neel's GitHub Stats"
+    />
   </a>
-  <!-- Top Languages (self-hosted SVG, updated by Actions) -->
+
   <a href="https://github.com/buildwithneel">
-    <img height="180" src="./profile/top-langs.svg" alt="Most Used Languages" />
+    <img
+      height="180"
+      src="./profile/top-langs.svg"
+      alt="Most Used Languages"
+    />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=buildwithneel&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+  <img
+    src="https://streak-stats.demolab.com/?user=buildwithneel&theme=tokyonight&hide_border=true"
+    alt="GitHub Streak"
+  />
 </p>
-
----
 
 ## ✍️ Random Dev Quote
 
