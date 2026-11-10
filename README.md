@@ -140,7 +140,7 @@
   <a href="https://github.com/buildwithneel">
     <img
       height="180"
-      src="https://github-readme-stats.vercel.app/api?username=buildwithneel&show_icons=true&include_all_commits=true&number_format=long&theme=tokyonight&hide_border=true"
+      src="./profile/stats.svg"
       alt="Neel's GitHub Stats"
     />
   </a>
